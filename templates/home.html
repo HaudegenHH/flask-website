@@ -11,6 +11,7 @@
             height: 360px;
             width: 100%;
             object-fit: cover;
+            margin-bottom: 16px;
         }
         h4 {
             color: rgb(120, 120, 120);
@@ -19,15 +20,21 @@
     </style>
 </head>
 <body>
+    {% include 'nav.html' %}
+
+    <img src="/static/banner.jpg" alt="Banner image/crossroads" id="banner" class="img-fluid" />
+    
     <div class="container">
         <h1 class="text-center mt-4 mb-4">Hello there! Here you will learn about job careers.</h1>
 
-        <img src="/static/banner.jpg" alt="Banner image/crossroads" id="banner" class="img-fluid" />
-
-        <h2 class="text-center mt-2 mb-4">About US</h2>
-
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quaerat delectus perferendis quia, ipsam sunt ab odit ullam a temporibus deserunt iste iusto fugit est atque distinctio? Explicabo, labore rem.</p>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus porro ab, veritatis saepe reprehenderit, ut quod dolorum a eius ducimus dignissimos, aut nobis. Laborum a ab eum. Fugit impedit tenetur culpa et temporibus inventore nulla saepe, laboriosam excepturi. Nobis autem impedit distinctio illum voluptatibus omnis labore nam quaerat, at tenetur.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quaerat delectus perferendis quia, ipsam sunt ab odit ullam a temporibus deserunt iste iusto fugit est atque distinctio? Explicabo, labore rem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus porro ab, veritatis saepe reprehenderit, ut quod dolorum a eius ducimus dignissimos, aut nobis. Laborum a ab eum. Fugit impedit tenetur culpa et temporibus inventore nulla saepe, laboriosam excepturi. Nobis autem impedit distinctio illum voluptatibus omnis labore nam quaerat, at tenetur.</p>
+            </div>
+            <div class="d-none d-md-block col-md-6">
+                <img src="/static/people.jpg" alt="people_working" style="height: 320px; border-radius: 5px;">
+            </div>
+        </div>
 
         <h2 class="text-center mt-4 mb-5">Open positions</h2>
 
